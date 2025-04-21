@@ -6,4 +6,4 @@
 // @grant        none
 // ==/UserScript==
 
-window.postMessage({ source: "tampermonkey", status: "installed" }, "*");
+document.cookie = "tampermonkeyScriptInstalled=true; path=/; max-age=" + 60 * 60 * 24 * 365; // cookie expires in 1 year
