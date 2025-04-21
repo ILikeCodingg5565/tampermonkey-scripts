@@ -6,4 +6,4 @@
 // @grant        none
 // ==/UserScript==
 
-console.log("Hello from a Tampermonkey script!");
+window.postMessage({ source: "tampermonkey", status: "installed" }, "*");
